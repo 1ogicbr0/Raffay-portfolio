@@ -90,7 +90,7 @@ class Services extends React.Component {
               <div className="icon">
                 <FontAwesomeIcon icon={faReact} />
               </div>
-              <h4>Front-end React</h4>
+              <h4>Motion Graphics</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
@@ -103,9 +103,9 @@ class Services extends React.Component {
           <Col md={4} className="service border-side">
             <AnimationContainer delay={400} animation="fadeInDown fast">
               <div className="icon">
-                <FontAwesomeIcon icon={faAngular} />
+                <FontAwesomeIcon icon={faPencilRuler} />
               </div>
-              <h4>Angular Web App</h4>
+              <h4>UI/UX Design</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
@@ -120,7 +120,7 @@ class Services extends React.Component {
               <div className="icon">
                 <FontAwesomeIcon icon={faAws} />
               </div>
-              <h4>AWS Management</h4>
+              <h4>Testing</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
@@ -135,7 +135,7 @@ class Services extends React.Component {
               <div className="icon">
                 <FontAwesomeIcon icon={faPencilRuler} className="solid" />
               </div>
-              <h4>UI/UX Design</h4>
+              <h4>Visual Design</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
@@ -150,7 +150,7 @@ class Services extends React.Component {
               <div className="icon">
                 <FontAwesomeIcon icon={faServer} className="solid" />
               </div>
-              <h4>Linux Server Management</h4>
+              <h4>Wireframing</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
@@ -165,7 +165,7 @@ class Services extends React.Component {
               <div className="icon">
                 <FontAwesomeIcon icon={faRobot} className="solid" />
               </div>
-              <h4>Artifical Intelligence</h4>
+              <h4>Prototyping</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.

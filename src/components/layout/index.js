@@ -20,7 +20,7 @@ class Layout extends React.Component {
       'about',
       'services',
       'portfolio',
-      'testimonials',
+      // 'testimonials',
       'contact',
     ]
     this.section_id = 0

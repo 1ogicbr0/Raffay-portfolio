@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 import Progress from 'components/progress'
 import { Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faAmilia, faDribbble, faGithub, faInstagram, faLinkedin, faMailchimp, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import ThemeContext from '../../context'
 import './styles.scss'
 
@@ -21,14 +21,15 @@ class Hero extends React.Component {
                             <div className="line-text">
                                 <h4>About Me</h4>
                             </div>
-                            <h3>I'm a Full Stack web developer working from home</h3>
+                            <h3>I'm a UI/UX Designer working from home</h3>
                             <div className="separator" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit nisi vitae feugiat vestibulum. Aliquam porta nulla vel odio scelerisque, pretium volutpat dui euismod. Integer porttitor dolor placerat malesuada dictum. Fusce enim dolor, dignissim quis ornare at, elementum nec turpis. Donec ac interdum libero, sed condimentum lectus. Nunc nec iaculis tortor. Donec interdum sollicitudin eros in pharetra. Donec ultricies laoreet dictum. Maecenas vestibulum sodales justo, id hendrerit orci aliquet gravida. Nulla facilisi.</p>
+                            <p>Creative Ui and UX Designer with up-to-date knowledge of design. Establishes and promotes design guidelines, best practices and standards. Brings excellent visual design skills with sensitivity to user-system interaction. I am quality oriented person,who gives the best result</p>
                             <div className="social social_icons">
-                                <FontAwesomeIcon icon={faGithub} className="social_icon" onClick={() => window.open('https://www.github.com')}/>
+                                <FontAwesomeIcon icon={faDribbble} className="social_icon" onClick={() => window.open('https://dribble.com/RaffayBinMoazzam')}/>
+                                <FontAwesomeIcon icon={faInstagram} className="social_icon" onClick={() => window.open('hhttps://www.instagram.com/raffaybinmoazzam')}/>
                                 <FontAwesomeIcon icon={faTwitter} className="social_icon" onClick={() => window.open('https://www.twitter.com')} />
                                 <FontAwesomeIcon icon={faYoutube} className="social_icon" onClick={() => window.open('https://www.youtube.com')} />
-                                <FontAwesomeIcon icon={faLinkedin} className="social_icon" onClick={() => window.open('https://www.linkedin.com')} />
+                                <FontAwesomeIcon icon={faLinkedin} className="social_icon" onClick={() => window.open('https://www.linkedin.com/in/ui-ux-designer-figma-adobexd')} />
                             </div>
                         </div>
                     </Col>
@@ -37,12 +38,14 @@ class Hero extends React.Component {
                                 <h4>My Skills</h4>
                             </div>
                             <div className="skills-container">
-                                <Progress name="Web Design" value={90} delay={1100} />
-                                <Progress name="Angular" value={50} delay={1100} />
-                                <Progress name="React" value={80} delay={1100} />
-                                <Progress name="Vue" value={40} delay={1100} />
-                                <Progress name="MongoDB" value={100} delay={1100} />
-                                <Progress name="CSS" value={50} delay={1100} />
+                                <Progress name="Motion Graphics" value={90} delay={1100} />
+                                <Progress name="UI Design" value={90} delay={1100} />
+                                <Progress name="UX Design" value={90} delay={1100} />
+                                <Progress name="UX Research" value={40} delay={1100} />
+                                <Progress name="Usability Testing" value={30} delay={1100} />
+                                <Progress name="Prototyping" value={50} delay={1100} />
+                                <Progress name="Wireframing" value={80} delay={1100} />
+                                <Progress name="Visual Design" value={70} delay={1100} />
                             </div>
                     </Col>
                 </Row>

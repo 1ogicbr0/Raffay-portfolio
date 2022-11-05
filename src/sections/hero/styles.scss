@@ -20,11 +20,11 @@
         .img {
             display: flex;
             align-items: flex-end;
-            justify-content: flex-end;
             padding: 0;
-            overflow: hidden;
             img {
                 margin-bottom: 0;
+            object-position: 0rem 20rem;
+
             }
         }
         .content {
