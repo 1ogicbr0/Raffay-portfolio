@@ -2,14 +2,35 @@ import React from 'react'
 import './styles.scss'
 import { StaticQuery, graphql } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
+import raffaypdf from '../../../content/raffay.pdf'
 import Glitch from 'components/glitch'
 import Typewriter from 'typewriter-effect'
 import ThemeContext from '../../context'
+import img1 from '../../../content/images//icons/1.png'
+import img2 from '../../../content/images//icons/2.png'
+import img3 from '../../../content/images/icons/3.png'
+import img4 from '../../../content/images/icons/4.png'
+import img5 from '../../../content/images/icons/5.png'
+import img6 from '../../../content/images/icons/6.png'
+import img7 from '../../../content/images/icons/7.png'
+import img8 from '../../../content/images/icons/8.png'
+import img9 from '../../../content/images/icons/9.png'
+import img10 from '../../../content/images/icons/10.png'
+import raffayImg from '../../../content/images/person2.jpg'
+
+const imgArray = [
+  img1,img2, img3,img4,img5,img6,img7,img8,img9,img10
+]
+
 class Hero extends React.Component {
 
-  static contextType = ThemeContext
+  static contextType = ThemeContext;
+
+
 
   render() {
+
+
     return (
       <section
         id={`${this.props.id}`}
@@ -27,22 +48,23 @@ class Hero extends React.Component {
                 options={{
                   strings: [
                     'UI/UX Designer',
-                    'Web Developer',
+                    'Motion Graphics Designer',
                     'Creative Content Creater',
+                    'Video Games Collector',
                   ],
                   autoStart: true,
                   loop: true,
                 }}
               />
               <button className="hover-button">
-                  <span>Download CV</span>
+                  <a href={raffaypdf} download>Download Resume</a>
               </button>
             </div>
             {this.icons()}
           </Col>
           <Col md={6} className="img">
             <img
-              src={this.props.mainImg.childImageSharp.fluid.src}
+              src={raffayImg}
               alt="person"
             />
           </Col>
@@ -52,10 +74,11 @@ class Hero extends React.Component {
   }
 
   icons() {
-    return this.props.icons.edges.map((value, index) => {
+    console.log(this.props.icons)
+    return imgArray.map((value, index) => {
       return (
         <img
-          src={value.node.childImageSharp.fluid.src}
+          src={value}
           className={`animated fadeIn move-${
             Math.floor(Math.random() * 10) % 2 === 0 ? 'up' : 'down'
           } float-image`}
@@ -65,7 +88,7 @@ class Hero extends React.Component {
               (+(index % 2 === 0 ? 80 : 20) - +(index % 2 === 0 ? 70 : 10)) +
               +(index % 2 === 0 ? 70 : 10)}%`,
           }}
-          alt="shape"
+          alt="Designer"
           key={index}
         />
       )
@@ -79,21 +102,22 @@ export default props => (
       query {
         icons: allFile(
           filter: {
-            extension: { regex: "/(png)/" }
-            relativeDirectory: { eq: "icons" }
+            extension: { regex: "/(jpg)/" }
+            relativePath: { eq: "1.jpg" }
           }
         ) {
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 100) {
+                fluid(maxWidth: 2000)
+                {
                   src
                 }
               }
             }
           }
         }
-        Img: file(relativePath: { eq: "person.jpg" }) {
+        Img: file(relativePath: { eq: "person2.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 2000) {
               src

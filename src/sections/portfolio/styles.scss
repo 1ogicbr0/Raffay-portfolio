@@ -80,13 +80,27 @@
                             left: 10%;
                             height: 80%;
                             width: 80%;
-                            background-color: #eb83f8;
+                            background-color: #305acf00;
                             opacity: 0;
+                            video {
+                                width: 40rem;
+                            };
                             span {
                                 z-index: 100;
                                 color: #fff;
                                 font-size: 20px;
                                 text-align: center;
+                                a{
+                                    font-family:'Courier New', Courier, monospace;
+                                    text-decoration: none;
+                                    color: #8ee4af;
+                                    font-weight: 600;
+                                    transition: 0.3s;
+                                }
+                                a:hover{
+                                    color: #080514;
+                                    transition: 0.3s;
+                                }
                             }
                         }
                         &:hover > .overlay {
@@ -145,6 +159,10 @@
                                 -ms-transform: scaleX(1);
                                 transform: scaleX(1);
                             }
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #fff;
                         }
                     }
                     @media (max-width: 991px) {

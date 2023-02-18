@@ -3,19 +3,23 @@ import { Row, Col, Container } from 'react-bootstrap'
 import BaffleText from 'components/baffle-text'
 import AnimationContainer from 'components/animation-container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faAngular, faAws } from '@fortawesome/free-brands-svg-icons'
+import { faReact, faAngular, faAws } from '@fortawesome/free-brands-svg-icons';
+import testingIcon from '../../../content/images/testing.png'
 import {
   faPencilRuler,
   faServer,
   faRobot,
   faSmileBeam,
   faPizzaSlice,
+  faList,
+  faCheckDouble,
   faQuoteRight,
   faCode,
 } from '@fortawesome/free-solid-svg-icons'
 import Counter from 'components/counter'
 import ThemeContext from '../../context'
 import './styles.scss'
+import { faEdit } from '@fortawesome/free-regular-svg-icons'
 
 class Services extends React.Component {
   constructor(props) {
@@ -92,11 +96,9 @@ class Services extends React.Component {
               </div>
               <h4>Motion Graphics</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                My Figma skills will help you create smooth transitions and motion graphics for your app
+                or website. To name a few, I am capable of creating easing, offsets, delays, parenting,
+                transformation, value changes, masking, overlays, cloning, and parallax.
               </p>
             </AnimationContainer>
           </Col>
@@ -107,26 +109,24 @@ class Services extends React.Component {
               </div>
               <h4>UI/UX Design</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                I can help you reach success for your small or large business with my creative and
+                analytical skills. It will be my pleasure to assist you with any challenge you might face
+                with my knowledge of UI, UX, and Motion Graphics! In recent years, I have satisfied
+                many clients successfully, so you won't be disappointed.
               </p>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
             <AnimationContainer delay={600} animation="fadeInRight fast">
               <div className="icon">
-                <FontAwesomeIcon icon={faAws} />
+                <img src={testingIcon} alt="test-icon" />
               </div>
-              <h4>Testing</h4>
+              <h4 id="ux-research">UX Research</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                I will conduct studies or interviews that examine how people use a product By asking users to
+                complete tasks on an app or website, I will identify pain points that users are
+                experiencing and explore how products can help solve those problems, and I will
+                evaluate the usability of existing products.
               </p>
             </AnimationContainer>
           </Col>
@@ -137,11 +137,7 @@ class Services extends React.Component {
               </div>
               <h4>Visual Design</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                I will focus on how a product or technology looks, designing logos, illustrations, and icons, as well as deciding on font color, size, placement, and visual layout of each page or screen and making all of the design elements fit together in a visually appealing way.
               </p>
             </AnimationContainer>
           </Col>
@@ -152,11 +148,7 @@ class Services extends React.Component {
               </div>
               <h4>Wireframing</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                I will draw wireframes by hand or digitally using software such as Figma, which can be hi-fi or lo-fi. Wireframing helps you bring your design ideas to life, so other people on your team can provide input and feedback.
               </p>
             </AnimationContainer>
           </Col>
@@ -167,11 +159,7 @@ class Services extends React.Component {
               </div>
               <h4>Prototyping</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                With Figma, I can create both low-fidelity and high-fidelity prototypes to demonstrate the functionality of an app or website, such as the transition between screens or how the product feels and looks.
               </p>
             </AnimationContainer>
           </Col>
@@ -188,7 +176,7 @@ class Services extends React.Component {
             <AnimationContainer delay={100} animation="fadeIn fast">
               <Counter
                 icon={faSmileBeam}
-                value={100}
+                value={5}
                 text="Happy Clients"
                 symbol="+"
                 duration={3}
@@ -199,7 +187,7 @@ class Services extends React.Component {
             <AnimationContainer delay={100} animation="fadeIn fast">
               <Counter
                 icon={faPizzaSlice}
-                value={1000}
+                value={50}
                 text="Pizzas Ordered"
                 symbol="+"
                 duration={3}
@@ -210,7 +198,7 @@ class Services extends React.Component {
             <AnimationContainer delay={100} animation="fadeIn fast">
               <Counter
                 icon={faQuoteRight}
-                value={500}
+                value={10}
                 text="Reviews"
                 symbol="+"
                 duration={3}
@@ -220,9 +208,9 @@ class Services extends React.Component {
           <Col md={3}>
             <AnimationContainer delay={100} animation="fadeIn fast">
               <Counter
-                icon={faCode}
-                value={50000}
-                text="Lines of Code"
+                icon={faEdit}
+                value={30}
+                text="UI Designs"
                 symbol="+"
                 duration={3}
               />

@@ -5,7 +5,7 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": hot(preferDefault(require("/home/kali/Desktop/Reat_GitHub_Projects/raffay-portfolio/.cache/dev-404-page.js"))),
+  "component---node-modules-gatsby-plugin-offline-app-shell-js": hot(preferDefault(require("/home/kali/Desktop/Reat_GitHub_Projects/raffay-portfolio/node_modules/gatsby-plugin-offline/app-shell.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/home/kali/Desktop/Reat_GitHub_Projects/raffay-portfolio/src/pages/404.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/home/kali/Desktop/Reat_GitHub_Projects/raffay-portfolio/src/pages/index.js")))
 }

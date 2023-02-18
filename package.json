@@ -5,16 +5,19 @@
   "author": "Syed Muaz Ali",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@primer/octicons-react": "^9.6.0",
     "animate.css": "^3.7.2",
     "baffle-react": "0.0.2",
+    "email-js": "^2.0.2",
     "gatsby": "^2.21.1",
     "gatsby-image": "2.2.37",
     "gatsby-link": "2.2.27",
     "gatsby-plugin-feed": "2.3.25",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-netlify": "2.1.30",
+    "gatsby-plugin-netlify-cms-paths": "^1.3.0",
     "gatsby-plugin-nprogress": "2.1.17",
     "gatsby-plugin-offline": "3.0.30",
     "gatsby-plugin-preact": "3.1.24",
@@ -66,6 +69,6 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop"
+    "dev": "gatsby develop"
   }
 }

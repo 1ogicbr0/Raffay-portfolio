@@ -33,8 +33,14 @@
         }
     }
     .logo {
-        max-width: 100px;
+        max-width: 30rem;
         margin: 50px auto;
+        filter: invert(100%);
+        cursor: pointer;
+    }
+    .logo:hover{
+        filter: invert(50%);
+        transition: 0.3s;
     }
     ul {
         padding: 0;

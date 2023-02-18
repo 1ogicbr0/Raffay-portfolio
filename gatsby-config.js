@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Retro - One Page Resume Template',
+    title: 'Raffay Portfolio',
     description:
-      'Retro is a modern stylish one page resume template built using React and Gatsby',
+      'Raffay, UI/UX Designer',
   },
   pathPrefix: '/',
   plugins: [
