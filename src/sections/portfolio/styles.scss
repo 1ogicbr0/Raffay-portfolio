@@ -80,10 +80,12 @@
                             left: 10%;
                             height: 80%;
                             width: 80%;
-                            background-color: #305acf00;
+                            background-color: #305acfce;
                             opacity: 0;
                             video {
-                                width: 40rem;
+                                height: 100%;
+                                width: 100%;
+                                overflow: hidden;
                             };
                             span {
                                 z-index: 100;

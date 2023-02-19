@@ -81,14 +81,14 @@ const imageSet = [
   image: motion_graphics_image_5,
   title: "Nat Geo 1",
   category: "Motion Graphics",
-  vidro: nat_Geo_1
+  video: nat_Geo_1
 },
 {
   id: 9,
   image: motion_graphics_image_6,
   title: "Nat Geo 2",
   category: "Motion Graphics",
-  vidro: nat_Geo_2
+  video: nat_Geo_2
 }
 ]
 
@@ -223,7 +223,7 @@ class Portfolio extends React.Component {
                   <Tilt className="Tilt" options={{ scale: 1, max: 50 }}>
                     <div className="overlay">
                      {value.gif && <img src={value.gif} />}
-                     {value.video && <video src={value.video}  autoPlay="false" loop="true"/>}
+                     {value.video && <video src={value.video}  autoPlay="false" loop muted/>}
                       {!value.gif && !value.video && <span className="title">
                         {value.title}
                         <br/>
